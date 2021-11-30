@@ -19,7 +19,7 @@ function App() {
       setPictures(response.data);
       console.log(response.data); 
     }).catch((err) =>{
-      console.log('axios err:' err);
+      console.log('axios err:', err);
     })
   }
 
@@ -30,7 +30,7 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <div className = "pictures">
-          <GalleryList pictures = {pictures} getPictures = {getPictures/>}
+          <GalleryList pictures = {pictures} getPictures = {getPictures}/>
       </div>
       </div>
     );
